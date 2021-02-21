@@ -8,28 +8,60 @@
         body {
             font-size: 1.2rem;
         }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            bottom: 0;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .ret {
+            width: 200px;
+            height: 500px;
+            margin-top: 10px;
+            overflow: auto;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-blue {
+            background-color: blue;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+
+        
     </style>
 </head>
 <body>
-    <div style="background-color: blue;">
-        <div> Esta é uma DIV normal</div>
-        <div>E aqui a história<div style="background-color: red;width: 500px;height: 50px;">de dentro</div>continua</div>
+    
+    <div class="bg-blue ret">
+            <div  class="quadrado bg-red"></div>
+            
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-green sticky"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-green sticky"></div>
+            <div  class="quadrado bg-red"></div>
+            <div  class="quadrado bg-red"></div>
+
     </div>
-
-    <div>
-        <p style="margin: 0;">Este é um parágrafo normal</p>
-        <p style="margin: 0;">E aqui a história continua</p>
-    </div>
-
-    <p>
-        Aqui eu tenho o início de um parágrafo <span style="background-color: green;width: 500px;display: inline-block;"> um SPAN no meio</span> E o fim do parágrafo
-    </p>
-
-    <p style="background-color: blue;">
-        Aqui eu tenho o início de um parágrafo <div style="background-color: red;">uma div no meio</div> E o fim do parágrafo.
-    </p>
-
-    <p>aqui eu tenho o início de um parágrafo <img src="https://www.cyberpowersystem.co.uk/images/cs/COR220T/CS_COR220T_220.png" style="width: 400px;" alt="">E o fim do parágrafo.</p>
 
 </body>
 </html>
